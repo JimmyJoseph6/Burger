@@ -1,6 +1,6 @@
-CREATE DATABASE IF NOT EXISTS burgers_db;
+CREATE DATABASE IF NOT EXISTS burgers_db1;
 
-USE burgers_db;
+USE burgers_db1;
 
 CREATE TABLE IF NOT EXISTS burgers(
 	id int NOT NULL AUTO_INCREMENT,
@@ -11,7 +11,7 @@ CREATE TABLE IF NOT EXISTS burgers(
 );
 
 INSERT INTO burgers (burger_name, devoured) VALUES ("Cheeseburger", FALSE);
-INSERT INTO burgers (burger_name, devoured) VALUES ("Chickenburger", FALSE);
-INSERT INTO burgers (burger_name, devoured) VALUES ("Salmonburger", FALSE);
+INSERT INTO burgers (burger_name, devoured) VALUES ("ChickenSammie", FALSE);
+INSERT INTO burgers (burger_name, devoured) VALUES ("AhiTunaBurger", FALSE);
 
 SELECT * FROM burgers;
