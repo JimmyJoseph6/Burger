@@ -2,12 +2,18 @@
 //this file houses all mysql connection data
 var mysql = require("mysql");
 
-var connection = mysql.createConnection({
+if (process.env.JAWSDB_URL) {
+  var connection = mysql.createConnection(process.env.JAWSDB_URL)
+}else {
+  var connection = mysql.createConnection({
     host     : "localhost",
     user     : "root",
     password : "",
     database : "burgers_db1"
 });
+}
+
+
 
 connection.connect(function(err) {
 
